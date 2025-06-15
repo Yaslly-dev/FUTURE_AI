@@ -43,7 +43,7 @@ Em breve integrará com Databricks para processar os dados e retornar as prediç
 *🖥️ Como rodar o projeto (frontend):*
 
 Clone o repositório:
-git clone https://github.com/TaisBds/EntregaFrontPorto.git
+git clone https://github.com/Yaslly-dev/FUTURE_AI.git
 
 Acesse a pasta do projeto:
 cd EntregaFrontPorto
