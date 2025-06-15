@@ -1,0 +1,12 @@
+/* Importação da fonte */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+/* Tailwind deve vir em seguida */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definição global para fontes */
+.font-orbitron {
+  font-family: 'Orbitron', sans-serif;
+}

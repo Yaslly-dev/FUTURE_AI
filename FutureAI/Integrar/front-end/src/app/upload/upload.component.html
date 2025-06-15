@@ -1,0 +1,45 @@
+<header class="header">
+  <div class="logo">FUTURE A.I. LAB</div>
+  <nav class="nav">
+    <a href="#">EXPLORE TOOLS</a>
+    <a href="#">VIEW ALL COURSE</a>
+    <a href="#">SIGN IN</a>
+  </nav>
+</header>
+
+<main class="main">
+  <h2>Linear Regression with Databricks</h2>
+  <p>The easiest way to know about the predictions in<br>the economy world.</p>
+
+  <form (submit)="onSubmit($event)" class="form">
+    <!-- Área de upload -->
+    <label for="file-upload" class="upload-box">
+      <img src="https://storage.googleapis.com/a1aa/image/e8b09ebe-b08a-452e-3929-7a16f7f7ba0b.jpg" alt="Upload Icon" width="40" height="40" />
+      <br><br><br>
+      <span *ngIf="!selectedFile">Drop a file<br>or<br>Select a file</span>
+      <span *ngIf="selectedFile">{{ selectedFile.name }}</span>
+
+      <input 
+        id="file-upload" 
+        type="file" 
+        accept=".csv"
+        (change)="onFileSelected($event)" 
+        style="display: none"
+      />
+    </label>
+
+    <!-- Botão corrigido -->
+    <button 
+      type="submit" 
+      class="generate-btn" 
+      [disabled]="!selectedFile"
+      [ngStyle]="{
+        'cursor': selectedFile ? 'pointer' : 'not-allowed',
+        'pointer-events': selectedFile ? 'auto' : 'none',
+        'opacity': selectedFile ? '1' : '0.5'
+      }"
+    >
+      Generate
+    </button>
+  </form>
+</main>
