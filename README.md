@@ -48,14 +48,21 @@ git clone https://github.com/Yaslly-dev/FUTURE_AI.git
 Acesse a pasta do projeto:
 cd EntregaFrontPorto
 
-Instale as dependências:
+📦 Instale as dependências:
 npm install
 
-Rode o servidor Angular:
+▶️ Inicie a aplicação:
 ng serve
 
-Abra o navegador em:
-http://localhost:****
+A aplicação estará disponível em: http://localhost:****
+
+📦 Instale as dependências (API):
+pip install -r requirements.txt
+
+▶️ Inicie a API:
+uvicorn main:app --reload --port 8000
+
+A API estará em: http://localhost:8000/docs
 
 ---
 *🚀 Próximos Passos*
